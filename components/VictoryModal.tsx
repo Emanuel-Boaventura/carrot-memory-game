@@ -1,4 +1,4 @@
-const qrCode = require('@/assets/images/qr-code.png')
+const qrCode = require('@/assets/images/qr-code.jpg')
 import { colors } from '@/constants/colors'
 import { TIME_LIMIT } from '@/constants/game'
 import React from 'react'
