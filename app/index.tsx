@@ -191,10 +191,11 @@ const s = StyleSheet.create({
     alignItems: 'center',
   },
   carrotLogo: {
-    width: 160,
-    height: 160,
+    width: 180,
+    height: 180,
+    objectFit: 'contain',
     marginTop: 24,
-    marginBottom: 8,
+    marginBottom: -16,
   },
   enjoyLogo: {
     width: 56,
