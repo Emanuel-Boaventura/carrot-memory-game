@@ -1,9 +1,9 @@
-const chilli = require('@/assets/images/chilli.png')
-const explosion = require('@/assets/images/explosion.png')
-const fuego = require('@/assets/images/fuego.png')
-const greenPepper = require('@/assets/images/green-pepper.png')
-const redPepper = require('@/assets/images/red-pepper.png')
-const takisLogo = require('@/assets/images/logo-takis.png')
+const hat = require('@/assets/images/hat.png')
+const chair = require('@/assets/images/chair.png')
+const products = require('@/assets/images/products.png')
+const sun = require('@/assets/images/sun.png')
+const sunscreen = require('@/assets/images/sunscreen.png')
+const sunshade = require('@/assets/images/sunshade.png')
 export interface Card {
   id: number
   type: string
@@ -18,16 +18,16 @@ export const INITIAL_SHOW_CARDS_TIME = 1000 * 2 // seconds
 export const MIN_CARDS = 4 // minimum number of cards
 
 export const GAME_CARDS: Card[] = [
-  { id: 1, type: 'chilli', image: chilli, isFlipped: false, matched: false },
-  { id: 2, type: 'chilli', image: chilli, isFlipped: false, matched: false },
-  { id: 3, type: 'explosion', image: explosion, isFlipped: false, matched: false },
-  { id: 4, type: 'explosion', image: explosion, isFlipped: false, matched: false },
-  { id: 5, type: 'fuego', image: fuego, isFlipped: false, matched: false },
-  { id: 6, type: 'fuego', image: fuego, isFlipped: false, matched: false },
-  { id: 7, type: 'green-pepper', image: greenPepper, isFlipped: false, matched: false },
-  { id: 8, type: 'green-pepper', image: greenPepper, isFlipped: false, matched: false },
-  { id: 9, type: 'red-pepper', image: redPepper, isFlipped: false, matched: false },
-  { id: 10, type: 'red-pepper', image: redPepper, isFlipped: false, matched: false },
-  { id: 11, type: 'logo-takis', image: takisLogo, isFlipped: false, matched: false },
-  { id: 12, type: 'logo-takis', image: takisLogo, isFlipped: false, matched: false },
+  { id: 1, type: 'sun', image: sun, isFlipped: false, matched: false },
+  { id: 2, type: 'sun', image: sun, isFlipped: false, matched: false },
+  { id: 3, type: 'hat', image: hat, isFlipped: false, matched: false },
+  { id: 4, type: 'hat', image: hat, isFlipped: false, matched: false },
+  { id: 5, type: 'chair', image: chair, isFlipped: false, matched: false },
+  { id: 6, type: 'chair', image: chair, isFlipped: false, matched: false },
+  { id: 7, type: 'products', image: products, isFlipped: false, matched: false },
+  { id: 8, type: 'products', image: products, isFlipped: false, matched: false },
+  { id: 9, type: 'sunscreen', image: sunscreen, isFlipped: false, matched: false },
+  { id: 10, type: 'sunscreen', image: sunscreen, isFlipped: false, matched: false },
+  { id: 11, type: 'logo-carrot', image: sunshade, isFlipped: false, matched: false },
+  { id: 12, type: 'logo-carrot', image: sunshade, isFlipped: false, matched: false },
 ]

@@ -1,7 +1,7 @@
 const background = require('@/assets/images/background.png')
 const backCard = require('@/assets/images/card.png')
 const enjoyLogo = require('@/assets/images/logo-enjoy.png')
-const takisLogo = require('@/assets/images/logo-takis.png')
+const carrotLogo = require('@/assets/images/logo-carrot.png')
 import { DefeatModal } from '@/components/DefeatModal'
 import { ThemedText } from '@/components/ThemedText'
 import { VictoryModal } from '@/components/VictoryModal'
@@ -119,7 +119,7 @@ export default function Index() {
       <SafeAreaView style={s.container} edges={['left', 'right']}>
         <ImageBackground source={background} style={s.imageBackground}>
           <Stack.Screen />
-          <Image source={takisLogo} style={s.takisLogo} />
+          <Image source={carrotLogo} style={s.carrotLogo} />
           <ThemedText style={s.title} weight="700">
             Jogo da Memória
           </ThemedText>
@@ -130,7 +130,7 @@ export default function Index() {
             </ThemedText>
           </ThemedText>
           <ThemedText color="white">
-            <ThemedText style={{ fontSize: 16 }} weight="700" color='white'>
+            <ThemedText style={{ fontSize: 16 }} weight="700" color="white">
               Tempo restante: {remainingTime}s
             </ThemedText>
           </ThemedText>
@@ -190,7 +190,7 @@ const s = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  takisLogo: {
+  carrotLogo: {
     width: 160,
     height: 160,
     marginTop: 24,

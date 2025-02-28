@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Takis: Jogo da Memória",
-    "slug": "takis-memory-game",
+    "name": "Cenoura & Bronze: Jogo da Memória",
+    "slug": "carrot-memory-game",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/takis-logo-1024px.png",
+    "icon": "./assets/images/logo-carrot.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,23 +13,23 @@
     },
     "android": {
       "splash": {
-        "backgroundColor": "#5B3192"
+        "backgroundColor": "#E18039"
       },
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/takis-logo-1024px.png",
-        "backgroundColor": "#5B3192"
+        "foregroundImage": "./assets/images/logo-carrot.png",
+        "backgroundColor": "#E18039"
       },
-      "package": "com.emanuelboaventura.takismemorygame"
+      "package": "com.emanuelboaventura.carrotmemorygame"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/logo-takis.png",
+          "image": "./assets/images/logo-carrot.png",
           "imageWidth": 150,
           "resizeMode": "contain",
-          "backgroundColor": "#5B3192"
+          "backgroundColor": "#E18039"
         }
       ]
     ],
@@ -41,7 +41,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "03530e06-251b-41d2-b379-ff9ac1614b2f"
+        "projectId": "475b3e97-a333-4b6d-b4db-4660c9de37a0"
       }
     },
     "owner": "emanuel-boaventura"

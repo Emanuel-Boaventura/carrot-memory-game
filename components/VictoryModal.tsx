@@ -85,7 +85,7 @@ const s = StyleSheet.create({
     fontSize: 14,
     paddingHorizontal: 16,
     textAlign: 'center',
-    width: '80%'
+    width: '80%',
   },
   qrCode: {
     width: 160,
