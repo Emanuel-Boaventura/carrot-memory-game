@@ -22,19 +22,37 @@ export const VictoryModal = ({ visible, attempts, remainingTime, resetGameState 
           </ThemedText>
 
           <ThemedText style={s.modalQrText}>
-            <ThemedText weight="700">Escaneie</ThemedText> o <ThemedText weight="700">QRCode</ThemedText> abaixo e siga
-            nossas <ThemedText weight="700">Redes Sociais</ThemedText> para receber a sua{' '}
-            <ThemedText weight="700">Premiação</ThemedText>
+            <ThemedText weight="700" color="white">
+              Escaneie
+            </ThemedText>{' '}
+            o{' '}
+            <ThemedText weight="700" color="white">
+              QRCode
+            </ThemedText>{' '}
+            abaixo e siga nossas{' '}
+            <ThemedText weight="700" color="white">
+              Redes Sociais
+            </ThemedText>{' '}
+            para receber a sua{' '}
+            <ThemedText weight="700" color="white">
+              Premiação
+            </ThemedText>
           </ThemedText>
 
           <Image source={qrCode} style={s.qrCode} />
           <ThemedText style={s.modalText} weight="600">
             Tempo:
-            <ThemedText weight="900"> {TIME_LIMIT - remainingTime}s</ThemedText>
+            <ThemedText weight="900" color="white">
+              {' '}
+              {TIME_LIMIT - remainingTime}s
+            </ThemedText>
           </ThemedText>
           <ThemedText style={s.modalText} weight="600">
             Tentativas:
-            <ThemedText weight="900"> {attempts}</ThemedText>
+            <ThemedText weight="900" color="white">
+              {' '}
+              {attempts}
+            </ThemedText>
           </ThemedText>
           <TouchableOpacity style={s.modalButton} onPress={resetGameState}>
             <ThemedText style={s.modalButtonText} weight="700">
@@ -74,18 +92,20 @@ const s = StyleSheet.create({
   },
   modalButtonText: {
     fontSize: 12,
-    color: colors.secondary,
     textAlign: 'center',
+    color: colors.white,
   },
   modalText: {
     fontSize: 12,
     lineHeight: 16,
+    color: colors.white,
   },
   modalQrText: {
     fontSize: 14,
     paddingHorizontal: 16,
     textAlign: 'center',
     width: '80%',
+    color: colors.white,
   },
   qrCode: {
     width: 160,
@@ -96,7 +116,7 @@ const s = StyleSheet.create({
   modalTitle: {
     fontSize: 28,
     marginBottom: 24,
-    color: colors.primary,
+    color: colors.white,
     textAlign: 'center',
     borderBottomWidth: 1,
     borderColor: colors.primary,

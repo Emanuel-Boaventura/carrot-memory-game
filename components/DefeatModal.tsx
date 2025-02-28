@@ -21,11 +21,17 @@ export const DefeatModal = ({ visible, attempts, resetGameState }: IDefeatModal)
 
           <ThemedText style={s.modalText} weight="600">
             Tempo:
-            <ThemedText weight="900"> {TIME_LIMIT}s</ThemedText>
+            <ThemedText weight="900" color="white">
+              {' '}
+              {TIME_LIMIT}s
+            </ThemedText>
           </ThemedText>
           <ThemedText style={s.modalText} weight="600">
             Tentativas:
-            <ThemedText weight="900"> {attempts}</ThemedText>
+            <ThemedText weight="900" color="white">
+              {' '}
+              {attempts}
+            </ThemedText>
           </ThemedText>
           <TouchableOpacity style={s.modalButton} onPress={resetGameState}>
             <ThemedText style={s.modalButtonText} weight="700">
@@ -66,17 +72,18 @@ const s = StyleSheet.create({
   },
   modalButtonText: {
     fontSize: 12,
-    color: colors.secondary,
+    color: colors.white,
     textAlign: 'center',
   },
   modalText: {
     fontSize: 12,
     lineHeight: 16,
+    color: colors.white,
   },
   modalTitle: {
     fontSize: 28,
     marginBottom: 16,
-    color: colors.primary,
+    color: colors.white,
     textAlign: 'center',
     borderBottomWidth: 1,
     borderColor: colors.primary,
